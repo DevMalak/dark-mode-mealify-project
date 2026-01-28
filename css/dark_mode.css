@@ -1,0 +1,104 @@
+:root {
+  --identity-bg: white;   
+  --identity-text: black; 
+  --main-color: #ce1212; 
+  --professional-color: var(--main-color);
+}
+
+.moon { display: inline-block; }
+.sun { display: none; }
+
+#toggle-btn:checked + .icons .moon { display: none; }
+#toggle-btn:checked + .icons .sun { display: inline-block; }
+
+body {
+  background-color: var(--identity-bg);
+  color: var(--identity-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body:has(#toggle-btn:checked) {
+  --identity-bg: black;
+  --identity-text: white;
+  --main-color: #c17e1f;
+  --professional-color: #c17e1f;
+}
+
+
+p, h2, h3, h5, span {
+  color: var(--identity-text);
+}
+
+.navbar {
+  background-color: var(--identity-bg) !important;
+  transition: background-color 0.3s;
+}
+.navbar .nav-link,
+.navbar-brand {
+  color: var(--identity-text) !important;
+  transition: color 0.3s;
+}
+
+/* Chefs Section */
+#chefs {
+  background-color: var(--identity-bg);
+  padding: 60px 0;
+  min-height: 100vh;
+  transition: background-color 0.3s;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: var(--identity-bg);
+  padding: 60px 0;
+  min-height: 100vh;
+  transition: background-color 0.3s;
+}
+
+/* Cards */
+.chef-card, .contact-card {
+  background-color: var(--identity-bg);
+  color: var(--identity-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ================================= Dark Mode Colors ================================= */
+
+/* Logo point */
+body:has(#toggle-btn:checked) .mealify-logo::after {
+  background-color: var(--main-color);
+}
+
+/*  Professional in Chefs section */
+body:has(#toggle-btn:checked) #chefs .text-danger {
+  color: var(--main-color) !important;
+}
+
+/* Contact highlight */
+
+body:has(#toggle-btn:checked) .contact-red {
+  color: var(--main-color);
+}
+
+/* Navbar hover line */
+body:has(#toggle-btn:checked) .navbar .nav-link::after {
+  background: var(--main-color);
+}
+
+/* Chef social icons hover */
+body:has(#toggle-btn:checked) .chef-social i:hover {
+  color: var(--main-color);
+}
+
+/* Buttons */
+body:has(#toggle-btn:checked) .contact-form button {
+  background-color: var(--main-color);
+}
+body:has(#toggle-btn:checked) .contact-form button:hover {
+  background-color: #b06a1b;
+}
+
+/* Icon circles */
+body:has(#toggle-btn:checked) .icon-circle {
+  background-color: var(--main-color);
+}

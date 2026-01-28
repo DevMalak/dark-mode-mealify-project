@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mealify</title>
+    <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- link fontawesome icons style -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- main style file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Dark mode -->
+    <link rel="stylesheet" href="./css/dark_mode.css">
+</head>
+
+<body>
+
+    <!----------------------------------navbar------------------------------------------->
+
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand mealify-logo" href="#">Mealify</a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#chefs">Chefs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                   
+                </ul>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+                <div class="dark-mode">
+                    <input type="checkbox" id="toggle-btn" hidden>
+                    <label for="toggle-btn" class="icons">
+                        <div class="moon"><i class="fa-solid fa-moon"></i></div>
+                        <div class="sun"><i class="fa-solid fa-sun"></i></div>
+                    </label>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <!----------------------------------------------------------- End navbar --------------------------------------->
+
+    <!----------------------------------- Chefs section-------------------------------------------------------------->
+
+    <section id="chefs" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h3 class="text-muted">Chefs</h3>
+                    <h2 class="fw-normal">
+                        Our <span class="text-danger">Professional</span> Chefs
+                    </h2>
+                </div>
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4 col-md-6">
+                    <figure class="chef-card shadow-sm rounded overflow-hidden text-center h-100 position-relative">
+                        <img src="./Images/chefs-1.jpg" class="img-fluid" alt="Walter White">
+                        <div class="chef-social">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <figcaption class="p-4">
+                            <h5 class="fw-bold mb-1">Walter White</h5>
+                            <span class="text-muted d-block mb-2">Master Chef</span>
+                            <p class="small fst-italic text-muted mb-0">
+                                Velit aut quia fugit et et. Dolorum ea voluptate vel tempore
+                                tenetur ipsa quae aut. Ipsum exercitationem iure minima enim
+                                corporis et voluptate.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <figure class="chef-card shadow-sm rounded overflow-hidden text-center h-100 position-relative">
+                        <img src="./Images/chefs-2.jpg" class="img-fluid" alt="Sarah Jhonson">
+                        <div class="chef-social">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                        <figcaption class="p-4">
+                            <h5 class="fw-bold mb-1">Sarah Jhonson</h5>
+                            <span class="text-muted d-block mb-2">Master Chef</span>
+                            <p class="small fst-italic text-muted mb-0">
+                                Quo esse repellendus quia id. Est eum et accusantium pariatur fugit
+                                nihil minima suscipit corporis. Voluptate sed quas reiciendis animi
+                                neque sapiente.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <figure class="chef-card shadow-sm rounded overflow-hidden text-center h-100 position-relative">
+                        <img src="./Images/chefs-3.jpg" class="img-fluid" alt="William Anderson">
+
+                        <div class="chef-social">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                        <figcaption class="p-4">
+                            <h5 class="fw-bold mb-1">William Anderson</h5>
+                            <span class="text-muted d-block mb-2">Master Chef</span>
+                            <p class="small fst-italic text-muted mb-0">
+                                Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae
+                                deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------------ End chefs section------------------------------------->
+
+    <!---------------------------------------------- contact section------------------------------------------>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h3 class="contact-title-small">CONTACT</h3>
+                <h2 class="contact-title-big">
+                    Need Help? <span class="contact-red">Contact Us</span>
+                </h2>
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-10">
+                    <div class="map-ratio">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1794855.8240134488!2d-74.53844065453023!3d40.492831052490274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2ff6e3c97a60b%3A0x6aecdf55c7a5052!2sMEAL!5e0!3m2!1sen!2sus!4v1707888642401!5m2!1sen!2sus"
+                            style="border:0;width:100%;height:100%;" allowfullscreen="">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="row g-4 mb-4 justify-content-center">
+
+
+                <div class="col-md-6">
+                    <div class="contact-card">
+                        <div class="icon-circle"><i class="fa-solid fa-map"></i></div>
+                        <div>
+                            <h5>Our Address</h5>
+                            <p>A108 Adam Street, New York</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h5>Call Us</h5>
+                            <p>+1 5589 55488 55</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="contact-card">
+                        <div class="icon-circle"><i class="fa-regular fa-envelope"></i></div>
+                        <div>
+                            <h5>Email Us</h5>
+                            <p>contact@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon-circle"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h5>Opening Hours</h5>
+                            <p>Mon-Sat: 11AM - 11PM</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Form  -->
+            <form class="contact-form">
+                <div class="contact-form-row">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <input type="text" placeholder="Subject">
+                <textarea rows="5" placeholder=""></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-------------------------------------------------- End contact section --------------------------------->
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/all.min.js"></script>
+
+</body>
+
+
+
+
+</html>
